@@ -1,0 +1,26 @@
+lr: 0.0001
+loss_type: l2
+
+hidden_size: 3072
+layer_num: 1
+num_heads: 2
+dropout: 0.1
+
+embedding: openai
+
+# Diffusion
+w: 4
+timesteps: 2000
+beta_sche: linear
+beta_start: 0.0001
+beta_end: 0.02
+ddim_step: 100
+p: 0.1
+
+mode: neg
+
+gamma: 5.0
+lamda: 0.5
+
+sample_func: batch
+tau: 2.0

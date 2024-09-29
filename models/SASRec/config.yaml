@@ -1,0 +1,9 @@
+lr: 1e-2
+loss_type: ce
+
+hidden_size: 64
+layer_num: 1
+num_heads: 2
+dropout: 0.1
+
+sample_func: random
