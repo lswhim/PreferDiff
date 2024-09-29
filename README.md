@@ -22,7 +22,7 @@
 
 
 
-## :walking_man: Single-GPU
+### :walking_man: Single GPU 
 
 ```sh
 python main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
