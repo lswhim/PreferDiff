@@ -18,23 +18,27 @@
 
 
 
-## Guide for Running PreferDiff
+## :one:  ​ Guide for Running PreferDiff
 
 
 
-## Single-GPU
+## :walking_man: Single-GPU
 
 ```sh
-python main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.5 --hidden_size=3072 
+python main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
 ```
 
-### Multi-GPU
+
+
+### :runner: Multi-GPU
 
 ```sh
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
 ```
 
-## Best Hyperparameters
+
+
+## :two: Best Hyperparameters
 
 | Dataset    | learning rate | Weight Decay | lambda | w    | Embedding Size |
 | ---------- | ------------- | ------------ | ------ | ---- | -------------- |
@@ -44,7 +48,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py
 
 
 
-## Guide for Running Baselines
+## :three: Guide for Running Baselines
 
 
+
+```sh
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py --model=SASRec --sd=O --td=O 
+```
 
