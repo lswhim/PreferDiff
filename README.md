@@ -2,6 +2,7 @@
 
 <div align='center'>
 <h1>Preference Diffusion for Recommdation Submitted to ICLR 2025</h1>
+</div>
 
 
 
@@ -19,7 +20,7 @@
 
 ## Running Guide for PreferDiff
 
-### Single-GPU
+## Single-GPU
 
 ```sh
 python main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.5 --hidden_size=3072 
