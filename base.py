@@ -1,6 +1,4 @@
 import torch.nn as nn
-from recdata import AbstractRecData
-from mapper import AbstractMapper
 
 class AbstractModel(nn.Module):
     def __init__(

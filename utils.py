@@ -7,7 +7,6 @@ from accelerate.utils import set_seed
 from typing import Union, Optional
 
 from base import AbstractModel
-from recdata import AbstractRecData
 
 
 def init_seed(seed: int, reproducibility: bool):

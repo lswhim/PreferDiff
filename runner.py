@@ -101,21 +101,7 @@ class Runner:
         if self.config.get('steps', None) != 0:
             self.model.load_state_dict(torch.load(self.trainer.saved_model_ckpt))
         else:
-            """
-            SASRec: ckpt/PDSRec-main.py_--model=SASRec_--sd=B_--td=B_--loss_type=ce_--lr=1e-2_--exp_type=lr-Sep-14-2024_09-29-11-ac20ba.pth
-            DreamRec: ckpt/PDSRec-main.py_--model=DreamRec_--sd=B_--td=B_--hidden_size=3072_--exp_type=dim-Sep-13-2024_15-26-48-9c76db.pth
-            Ours: ckpt/PDSRec-main.py_--model=PDSRec_--sd=B_--td=B_--loss_type=cosine_--ab=iids_--hidden_size=3072_--exp_type=ab-Sep-14-2024_15-53-12-06c9df.pth
-            """
-            ckpt_dict = {
-                'SASRec': 'ckpt/PDSRec-main.py_--model=SASRec_--sd=B_--td=B_--loss_type=ce_--lr=1e-2_--exp_type=lr-Sep-14-2024_09-29-11-ac20ba.pth',
-                'DreamRec': 'ckpt/PDSRec-main.py_--model=DreamRec_--sd=B_--td=B_--hidden_size=3072_--exp_type=dim-Sep-13-2024_15-26-48-9c76db.pth',
-                'PDSRec': 'ckpt/PDSRec-main.py_--model=PDSRec_--sd=B_--td=B_--loss_type=cosine_--ab=iids_--hidden_size=3072_--exp_type=ab-Sep-14-2024_15-53-12-06c9df.pth'
-            }
-            self.model.load_state_dict(torch.load(ckpt_dict[self.config['model']]))
-            embeddings = self.model.get_current_embeddings()
-            embeddings_np = embeddings.cpu().numpy()
-            import numpy as np
-            np.save('{}_{}_embeddings.npy'.format(self.config['model'], self.config['sd']), embeddings_np)
+            pass
 
         self.model, test_dataloader = self.accelerator.prepare(
             self.model, test_dataloader
@@ -129,6 +115,7 @@ class Runner:
                 for key in test_results:
                     self.accelerator.log({f'Test_Metric/{key}': test_results[key]})
 
+        import numpy as np
         if self.config['exp_type'] == 'check':
             np.save('{}_{}_vis_embeddings.npy'.format(self.config['model'], self.config['sd']),
                     np.array(self.model.samples))
