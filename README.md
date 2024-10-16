@@ -1,8 +1,9 @@
 
 
 <div align='center'>
-<h1>Preference Diffusion for Recommdation Submitted to ICLR 2025</h1>
+<h1>Preference Diffusion for Recommdation</h1>
 </div>
+
 
 
 
