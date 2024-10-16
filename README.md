@@ -2,12 +2,13 @@
 
 <div align='center'>
 <h1>Preference Diffusion for Recommdation</h1>
- <a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu</a>,
+ <a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu<sup>1</sup></a>,
  <a href='https://github.com/anzhang314'>An Zhang*</a>,
- <a href='https://hugo-chinn.github.io/'>Guoqing Hu*</a>,
- <a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian*</a>,
-   <a href='https://www.chuatatseng.com/'>Tat-Seng Chua*</a>,
+ <a href='https://hugo-chinn.github.io/'>Guoqing Hu</a>,
+ <a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian</a>,
+   <a href='https://www.chuatatseng.com/'>Tat-Seng Chua</a>,
 (*Correspondence )
+    <sup>1</sup>East China Normal University, <sup>2</sup>National University of Singapore, <sup>3</sup>University of Science and Technology of China
 </div>
 
 
