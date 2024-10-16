@@ -7,11 +7,10 @@
  <a href='https://hugo-chinn.github.io/'>Guoqing Hu<sup>3</sup></a>,
  <a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian<sup>1</sup></a>,
    <a href='https://www.chuatatseng.com/'>Tat-Seng Chua<sup>2</sup></a>,
-(*Correspondence )
     <br>
     <sup>1</sup>East China Normal University, <sup>2</sup>National University of Singapore, 
     <br>
-    <sup>3</sup>University of Science and Technology of China
+    <sup>3</sup>University of Science and Technology of China, (*Correspondence )
 </div>
 
 
