@@ -6,7 +6,7 @@ from utils import parse_command_line_args
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', type=str, default='PDSRec', help='Model name')
+    parser.add_argument('--model', type=str, default='PreferDiff', help='Model name')
     parser.add_argument('--sd', type=str, default='C')
     parser.add_argument('--td', type=str, default='O')
     parser.add_argument('--exp_type', type=str, default='srec')

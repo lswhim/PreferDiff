@@ -4,7 +4,6 @@ import numpy as np
 from tqdm import tqdm
 from torch.optim import AdamW
 from base import AbstractModel
-from mapper import AbstractMapper
 from transformers.optimization import get_scheduler
 from collections import defaultdict, OrderedDict
 from utils import get_file_name, get_total_steps
@@ -35,17 +34,12 @@ class BaseTrainer(object):
             weight_decay=self.config['weight_decay'],
         )
         total_n_steps = get_total_steps(self.config, train_dataloader)
-        # scheduler = get_scheduler(
-        #     name="cosine",
-        #     optimizer=optimizer,
-        #     num_warmup_steps=self.config['warmup_steps'],
-        #     num_training_steps=total_n_steps,
-        # )
+
         self.model, optimizer, train_dataloader, val_dataloader = self.accelerator.prepare(
             self.model, optimizer, train_dataloader, val_dataloader)
         self.config.pop('accelerator')
         self.accelerator.init_trackers(
-            project_name="PDSRec",
+            project_name="PreferDiff",
             config=self.config
         )
         n_epochs = np.ceil(total_n_steps / (len(train_dataloader) * self.accelerator.num_processes)).astype(int)

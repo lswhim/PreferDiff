@@ -6,7 +6,7 @@ from modules import SinusoidalPositionEmbeddings, diagonalize_and_scale, in_batc
 from diffusion import PreferenceDiffusion
 from models.SASRec._model import SASRec
 
-class PDSRec(SASRec):
+class PreferDiff(SASRec):
     def __init__(self, config: dict):
         super().__init__(config)
         self.config = config

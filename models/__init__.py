@@ -1,2 +1,2 @@
 from models.SASRec._model import SASRec
-from models.PDSRec._model import PDSRec
+from models.PreferDiff._model import PreferDiff

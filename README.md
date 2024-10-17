@@ -36,7 +36,7 @@
 ### :walking_man: Single GPU 
 
 ```sh
-python main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
+python main.py --model=PreferDiff --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
 ```
 
 
@@ -44,7 +44,7 @@ python main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=
 ### :runner: Multi-GPU
 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py --model=PDSRec --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py --model=PreferDiff --sd=O --td=O --loss_type=cosine  --lamda=0.4 --w=2 --hidden_size=3072 
 ```
 
 
