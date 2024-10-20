@@ -1,17 +1,9 @@
 
 
 <div align='center'>
-<h1>Preference Diffusion for Recommdation</h1>
- <a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu<sup>1,2</sup></a>,
- <a href='https://github.com/anzhang314'>An Zhang<sup>2*</sup></a>,
- <a href='https://hugo-chinn.github.io/'>Guoqing Hu<sup>3</sup></a>,
- <a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian<sup>1</sup></a>,
-   <a href='https://www.chuatatseng.com/'>Tat-Seng Chua<sup>2</sup></a>,
-    <br>
-    <sup>1</sup>East China Normal University, <sup>2</sup>National University of Singapore, 
-    <br>
-    <sup>3</sup>University of Science and Technology of China, (*Correspondence )
+<h1>Preference Diffusion for Recommdation Submitted to ICLR 2025</h1>
 </div>
+
 
 
 
