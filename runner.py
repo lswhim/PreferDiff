@@ -4,10 +4,9 @@ from typing import Union
 from accelerate import Accelerator
 from torch.utils.data import DataLoader, Sampler
 
-from recdata import AbstractRecData, NormalRecData
 from base import AbstractModel
 
-from utils import get_config, init_device, init_seed, get_model, get_mapper
+from utils import get_config, init_device, init_seed, get_model
 from trainer import BaseTrainer
 
 
