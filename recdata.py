@@ -38,13 +38,9 @@ class NormalRecData:
         from pathlib import Path
 
         source_dict = {
-            'A': 'Automotive',
-            'B': 'Beauty',
             'C': 'CDs_and_Vinyl',
-            'M': 'Movies_and_TV',
             'O': 'Sports_and_Outdoors',
             'T': 'Toys_and_Games',
-            'S': 'steam'
         }
         self.config['source_dict'] = source_dict
         def read_data_from_file(domain, mode=''):
