@@ -1,7 +1,7 @@
 
 
 <div align='center'>
-<h1>Preference Diffusion for Recommdation</h1>
+<h1>Preference Diffusion for Recommdation (ICLR 2025)</h1>
  <a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu<sup>1,2</sup></a>,
  <a href='https://github.com/anzhang314'>An Zhang<sup>2*</sup></a>,
  <a href='https://hugo-chinn.github.io/'>Guoqing Hu<sup>3</sup></a>,
