@@ -69,3 +69,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port=12330 main.py --model=SASRec --sd=O --td=O 
 ```
 
+# Bib
+
+@article{Liu2024PreferDiff,
+  title={Preference Diffusion for Recommendation},
+  author={Liu, Shuo and Zhang, An and Hu, Guoqing and Qian, Hong and Chua, Tat-seng},
+  journal={arXiv preprint arXiv:2410.13117},
+  year={2024}
+}
